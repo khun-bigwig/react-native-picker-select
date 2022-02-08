@@ -402,6 +402,7 @@ export default class RNPickerSelect extends PureComponent {
                         Platform.OS === 'ios' ? style.inputIOS : style.inputAndroid,
                         this.getPlaceholderStyle(),
                     ]}
+                    maxFontSizeMultiplier={this.props.maxFontSizeMultiplier}
                     value={selectedItem.inputLabel ? selectedItem.inputLabel : selectedItem.label}
                     ref={this.setInputRef}
                     editable={false}
